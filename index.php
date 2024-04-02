@@ -11,9 +11,8 @@
     <title>Homepage</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="img\galo.png" alt="Bootstrap" width="60" height="60">
@@ -30,10 +29,10 @@
                         <a class="nav-link" href="?page=novoPet">Novo Pet</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?page=listarPets">Listar Pets</a>
+                        <a class="nav-link" href="?page=novoUsuario">Novo Usuário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?page=novoUsuario">Novo Usuário</a>
+                        <a class="nav-link" href="?page=listarPets">Listar Pets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=listarUsuarios">Listar Usuários</a>
@@ -42,7 +41,8 @@
             </div>
         </div>
     </nav>
-
+</header>
+<body>                
     <!-- includes -->
     <div class="container">
         <div class="row">
@@ -70,8 +70,6 @@
             </div>
         </div>
     </div>
-    
-    <?php include('config.php')?>
 </body>
 
 </html>
