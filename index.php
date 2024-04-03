@@ -62,6 +62,9 @@
                     case 'listarUsuarios':
                         include('listar-usuarios.php');
                         break;
+                    case 'salvar':
+                        include('salvar.php');
+                        break;
                     default:
                         echo "<h1>Página Inicial</h1>";
                         break;

@@ -1,5 +1,5 @@
 <?php 
-    $con = mysqli_connect('localhost:3333', 'root', '');
+    $con = mysqli_connect('localhost:3306', 'root', '');
     $database = mysqli_select_db($con, 'galize');
 
     if (!$con || !$database) {
