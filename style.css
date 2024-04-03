@@ -8,3 +8,14 @@
     max-width: 500px;
     padding: 40px, 0, 40px, 0;
 }
+
+.backgroundimage{
+    background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+}

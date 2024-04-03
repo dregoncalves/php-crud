@@ -7,10 +7,29 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Se você tiver um arquivo style.css -->
     <title>Homepage</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .backgroundimage {
+            background-image: url('img/background.jpg');
+            height: 100%;
+            width: 150%;
+            position: relative;
+            top: 0;
+            left: -30%;
+            z-index: -1;
+        }
+    </style>
 </head>
+
 <header>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded">
         <div class="container-fluid">
@@ -64,7 +83,7 @@
                         include('editar-usuario.php');
                         break;
                     default:
-                        echo "<h1>Página Inicial</h1>";
+                        echo "<img class='backgroundimage' src='img/background.jpg' alt='Gatinho fofinho'>";
                         break;
                 }
                 ?>
