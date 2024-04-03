@@ -10,7 +10,7 @@
     </div>
     <div class="mb-3">
         <label">Idade</label>
-        <input type="text" name="idade" class="form-control">
+            <input type="text" name="idade" class="form-control">
     </div>
     <div class="mb-3">
         <label>Peso</label>

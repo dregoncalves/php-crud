@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="img\galo.png" alt="Bootstrap" width="60" height="60">
@@ -32,17 +32,15 @@
                         <a class="nav-link" href="?page=novoUsuario">Novo Usuário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?page=listarPets">Listar Pets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=listarUsuarios">Listar Usuários</a>
+                        <a class="nav-link" href="?page=listar">Listar Usuários</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<body>                
+
+<body>
     <!-- includes -->
     <div class="container">
         <div class="row">
@@ -53,17 +51,17 @@
                     case 'novoPet':
                         include('novo-pet.php');
                         break;
-                    case 'listarPets':
-                        include('listar-pets.php');
-                        break;
                     case 'novoUsuario':
                         include('novo-usuario.php');
                         break;
-                    case 'listarUsuarios':
-                        include('listar-usuarios.php');
+                    case 'listar':
+                        include('listar-usuario.php');
                         break;
                     case 'salvar':
                         include('salvar.php');
+                        break;
+                    case 'editar':
+                        include('editar-usuario.php');
                         break;
                     default:
                         echo "<h1>Página Inicial</h1>";
