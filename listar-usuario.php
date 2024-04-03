@@ -28,6 +28,7 @@
                     <th>#</th>
                     <th>Nome</th>
                     <th>E-mail</th>
+                    <th>Telefone</th>
                     <th>Endereço</th>
                     <th>Ações</th>
                 </tr>
@@ -38,6 +39,7 @@
                         <td><?php echo $row->id; ?></td>
                         <td><?php echo $row->nome; ?></td>
                         <td><?php echo $row->email; ?></td>
+                        <td><?php echo $row->telefone; ?></td>
                         <td><?php echo $row->endereco; ?></td>
                         <td>
                             <button onclick="location.href='?page=editar&id=<?php echo $row->id; ?>';" class="btn btn-primary btn-sm mx-3">Editar</button>
